@@ -1,10 +1,14 @@
 module.exports = {
-    base: "/",
-    title: " ",
-    description: " ",
+    base: "/my-blog/",
+    title: "__frank",
+    description: "我的博客",
     theme: "reco",
     // 移动端优化
-    head: [["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }]],
+    head: [
+        ["link", { rel: "ico", href: "/favicon.ico" }],
+        ["meta", { name: "keywords", content: "Vuepress博客  __frank" }],
+        ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
+    ],
     markdown: {
         lineNumbers: true, //显示代码块的行数
     },
@@ -63,29 +67,16 @@ module.exports = {
                 link: "https://vuepress-theme-reco.recoluan.com",
             },
         ],
+        vssueConfig: {
+            platform: "github-v4",
+            owner: "kfg1234",
+            repo: "my-blog",
+            clientId: "dac6aac3cb0f58ce480d",
+            clientSecret: "8bda2b69e219b59a9869d749124e151f525401d4",
+        },
     },
     // 插件
     plugins: [
-        // [
-        //     "sakura",
-        //     {
-        //         num: 20, // 默认数量
-        //         show: true, //  是否显示
-        //         zIndex: -1, // 层级
-        //         img: {
-        //             replace: false, // false 默认图 true 换图 需要填写httpUrl地址
-        //             httpUrl: "...", // 绝对路径
-        //         },
-        //     },
-        // ],
-        // [
-        //     "cursor-effects",
-        //     {
-        //         size: 2, // size of the particle, default: 2
-        //         shape: ["star" | "circle"], // shape of the particle, default: 'star'
-        //         zIndex: 999999999, // z-index property of the canvas, default: 999999999
-        //     },
-        // ],
         [
             "@vuepress/medium-zoom",
             {
@@ -142,16 +133,6 @@ module.exports = {
                 },
                 ribbonShow: false, //  点击彩带  true显示  false为不显示
                 ribbonAnimationShow: true, // 滑动彩带
-            },
-        ],
-        [
-            "dynamic-title",
-            {
-                showIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
-                showText: "欢迎回来 O(∩_∩)O~",
-                hideIcon: "https://www.zpzpup.com/assets/image/favicon.ico",
-                hideText: "失联中。。。快回来~",
-                recoverTime: 2000,
             },
         ],
     ],
