@@ -2,6 +2,7 @@
 title: 观察者Observer
 date: "2022-5-27"
 sidebar: "auto"
+sticky: 2
 categories:
     - 前端
 tags:
@@ -10,7 +11,7 @@ tags:
 
 ## Web Api
 
-记录一些平常用的比较少的Api，不然总是看了就忘
+记录一些平常用的比较少的 Api，不然总是看了就忘
 
 ## ResizeObserver
 
@@ -31,7 +32,7 @@ const resizeObserver = new ResizeObserver((entries) => {
 });
 ```
 
-2. 调用实例的 observe 方法，开始监听DOM元素
+2. 调用实例的 observe 方法，开始监听 DOM 元素
 
 ```js
 let wrap1 = document.querySelector(".wrap1");
@@ -44,13 +45,14 @@ resizeObserver.observe(wrap2, {
 });
 ```
 
-3. 调用实例的unobserve方法取消指定DOM元素的观察
+3. 调用实例的 unobserve 方法取消指定 DOM 元素的观察
 
 ```js
 resizeObserver.unobserve(wrap1);
 ```
 
-4. 调用实例的udisconnect方法取消所有DOM元素的观察
+4. 调用实例的 udisconnect 方法取消所有 DOM 元素的观察
+
 ```js
 resizeObserver.disconnect();
 ```

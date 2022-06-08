@@ -1,7 +1,6 @@
 ---
 home: true
-heroText: My Blog
-tagline: 好记性不如烂笔头
+tagline: 人类的赞歌是勇气的赞歌！人类的美是勇气的美！
 heroTextStyle: {
   color: '#fff'
 }
@@ -15,7 +14,7 @@ heroTextStyle: {
 # }
 bgImage: '/jojo.png'
 bgImageStyle: {
-  height: '480px',
+  height: '700px',
   color: 'white'
 }
 ---

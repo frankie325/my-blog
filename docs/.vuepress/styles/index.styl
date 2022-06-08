@@ -1,1 +1,54 @@
 // 可以设置全局样式
+.abstract-wrapper > .abstract-item {
+    border: 0;
+    // transition: border 0.2s;
+}
+
+.abstract-wrapper > .abstract-item::before,
+.abstract-wrapper > .abstract-item::after {
+    content: "";
+    position: absolute;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.abstract-wrapper > .abstract-item::before {
+    top: 0;
+    left: 0;
+}
+
+.abstract-wrapper > .abstract-item::after {
+    right: 0;
+    bottom: 0;
+}
+
+.abstract-wrapper > .abstract-item:hover::before,
+.abstract-wrapper > .abstract-item:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.abstract-wrapper > .abstract-item:nth-of-type(odd):hover::before {
+    border-top: 2px solid #60daaa;
+    border-left: 2px solid #60daaa;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.abstract-wrapper > .abstract-item:nth-of-type(odd):hover::after {
+    border-bottom: 2px solid #60daaa;
+    border-right: 2px solid #60daaa;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.abstract-wrapper > .abstract-item:nth-of-type(even)::before {
+    border-top: 2px solid #6477b9;
+    border-left: 2px solid #6477b9;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.abstract-wrapper > .abstract-item:nth-of-type(even)::after {
+    border-bottom: 2px solid #6477b9;
+    border-right: 2px solid #6477b9;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
