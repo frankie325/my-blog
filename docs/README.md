@@ -1,6 +1,7 @@
 ---
 home: true
 tagline: 人类的赞歌是勇气的赞歌！人类的美是勇气的美！
+heroText: null
 heroTextStyle: {
   color: '#fff'
 }

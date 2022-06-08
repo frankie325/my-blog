@@ -2,7 +2,7 @@ const vuepressPlugin = require("./config/plugin");
 
 module.exports = {
     base: "/my-blog/",
-    title: "__frank",
+    title: "__frank的博客",
     description: "我的博客",
     theme: "reco",
     // 移动端优化
