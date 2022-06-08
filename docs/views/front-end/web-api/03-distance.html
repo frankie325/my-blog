@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            /* html{
+                margin: 50px;
+                padding: 50px;
+            }
+            body {
+                padding: 50px;
+                margin: 50px;
+                box-sizing: border-box;
+            } */
+            html,body{
+                margin: 0;
+                padding: 0;
+            }
+            .parent {
+                position: relative;
+                width: 500px;
+                height: 500px;
+                background-color: burlywood;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 20px solid red;
+                padding: 20px;
+                margin-left: 100px;
+                box-sizing: border-box;
+            }
+            .child {
+                width: 100px;
+                height: 100px;
+                background-color: greenyellow;
+                /* display: none; */
+                /* position: fixed; */
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            body{
+                position: relative;
+            }
+            .box {
+                width: 400px;
+                height: 400px;
+                /* height: 2000px; */
+                /* margin: 50px;
+                margin-left: 200px; */
+                padding: 50px;
+                /* border-top: 100px solid red;
+                border-bottom: 100px solid red;
+                border-left: 50px solid red;
+                border-right: 50px solid red; */
+                border: 50px solid red;
+                background-color: burlywood;
+                box-sizing: border-box;
+                /* word-break: keep-all; */
+                overflow: auto;
+                position: absolute;
+                top: -100px;
+                left: -100px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="parent">
+            <div class="child">子盒子</div>
+        </div> -->
+        <!-- <div class="box">
+            哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+        </div> -->
+        <div class="box">
+            
+        </div>
+    </body>
+    <script>
+        // const child = document.querySelector(".child");
+        // console.log("child.offsetParent", child.offsetParent);
+        // console.log("child.offsetLeft", child.offsetLeft);
+        // console.log("child.offsetTop", child.offsetTop);
+
+        const box = document.querySelector(".box");
+
+        // console.log("box.offsetWidth", box.offsetWidth);
+        // console.log("box.offsetHeight", box.offsetHeight);
+        // console.log("box.clientWidth", box.clientWidth);
+        // console.log("box.clientHeight", box.clientHeight);
+        // console.log("box.clientTop", box.clientTop);
+        // console.log("box.clientLeft", box.clientLeft);
+
+        // console.log("box.scrollWidth", box.scrollWidth);
+        // console.log("box.scrollHeight", box.scrollHeight);
+        // console.log("box.scrollTop", box.scrollTop);
+        // console.log("box.scrollLeft", box.scrollLeft);
+
+        box.addEventListener("scroll", (event) => {
+            // event;
+            // console.log("box.scrollTop", event.target.scrollTop);
+            // console.log("box.scrollLeft", event.target.scrollLeft);
+        });
+        box.addEventListener("click", (event) => {
+            console.log("event.clientX", event.clientX);
+            console.log("event.clientY", event.clientY);
+            console.log("event.pageX", event.pageX);
+            console.log("event.pageY", event.pageY);
+            console.log("event.offsetX", event.offsetX);
+            console.log("event.offsetY", event.offsetY);
+            console.log("event.screenX", event.screenX);
+            console.log("event.screenY", event.screenY);
+        });
+
+        // document.body.addEventListener("click", (event) => {
+        //     console.log("event.clientX", event.clientX);
+        //     console.log("event.clientY", event.clientY);
+        //     console.log("event.pageX", event.pageX);
+        //     console.log("event.pageY", event.pageY);
+        // });
+        console.log(box.getBoundingClientRect())
+    </script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .wrap1 {
+            height: 100px;
+            background-color: aqua;
+        }
+        .wrap2 {
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+    <body>
+        <div class="wrap1"></div>
+        <div class="wrap2"></div>
+    </body>
+    <script>
+        const resizeObserver = new ResizeObserver((entries) => {
+            console.log(entries);
+            for (let entry of entries) {
+                console.log(entry);
+            }
+        });
+
+        let wrap1 = document.querySelector(".wrap1");
+        let wrap2 = document.querySelector(".wrap2");
+        resizeObserver.observe(wrap1, {
+            box: "content-box", // 以哪种盒子模型来观察变动
+        });
+        resizeObserver.observe(wrap2, {
+            box: "content-box", // 以哪种盒子模型来观察变动
+        });
+
+        // setTimeout(() => {
+        //     // 解除监听
+        //     resizeObserver.unobserve(wrap1)
+        // }, 3000);
+        
+        // 取消对所有元素的监听
+        // resizeObserver.disconnect()
+    </script>
+</html>
