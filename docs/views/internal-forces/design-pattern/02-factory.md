@@ -3,7 +3,7 @@ title: 工厂模式
 date: "2022-4-22"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 计算机
 tags:
     - 设计模式
 ---

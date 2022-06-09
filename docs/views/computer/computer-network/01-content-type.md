@@ -3,7 +3,7 @@ title: Content-Type
 date: "2022-5-20"
 sidebar: "auto"
 categories:
-    - 计算机网络
+    - 计算机
 tags:
     - http
 ---

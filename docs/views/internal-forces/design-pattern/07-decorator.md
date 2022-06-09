@@ -3,7 +3,7 @@ title: 装饰器模式
 date: "2022-4-27"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 计算机
 tags:
     - 设计模式
 ---

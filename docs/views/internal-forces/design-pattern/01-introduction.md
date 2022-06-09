@@ -3,7 +3,7 @@ title: 设计模式介绍
 date: "2022-4-21"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 计算机
 tags:
     - 设计模式
 ---

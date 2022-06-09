@@ -3,7 +3,7 @@ title: 桥接模式
 date: "2022-5-02"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 计算机
 tags:
     - 设计模式
 ---

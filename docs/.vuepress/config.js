@@ -36,7 +36,47 @@ module.exports = {
         // 导航栏
         nav: [
             { text: "主页", link: "/", icon: "reco-home" },
+            {
+                text: "内力修炼",
+                link: "/views/internal-forces/",
+                icon: "fa-solid fa-sword",
+                items: [
+                    {
+                        text: "数据结构",
+                        link: "/views/internal-forces/data-structure",
+                    },
+                    {
+                        text: "算法",
+                        link: "/views/internal-forces/algorithm/",
+                    },
+                    {
+                        text: "设计模式",
+                        link: "/views/internal-forces/design-pattern/01-introduction",
+                    },
+                ],
+            },
+            {
+                text: "源码系列",
+                link: "/views/source-code/",
+                icon: "fa-solid fa-code",
+                items: [
+                    {
+                        text: "vue2",
+                        link: "/views/source-code/vue2/01-entry",
+                    },
+                    {
+                        text: "vue3",
+                        link: "/views/source-code/vue3/01-entry",
+                    },
+                    {
+                        text: "webpack5",
+                        link: "/views/source-code/webpack5/01-entry",
+                    },
+                ],
+            },
+            { text: "奇妙的css", link: "/views/front-end/css/", icon: "fa-brands fa-css3" },
             { text: "时间轴", link: "/timeline/", icon: "reco-date" },
+            { text: "关于", link: "/views/about/", icon: "reco-account" },
         ],
         // 博客配置
         blogConfig: {

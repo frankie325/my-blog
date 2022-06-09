@@ -3,7 +3,7 @@ title: linux的各种安装
 date: "2022-1-20"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 后端
 tags:
     - linux
 ---

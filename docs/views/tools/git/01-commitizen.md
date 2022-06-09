@@ -3,7 +3,7 @@ title: commit规范化
 date: "2022-2-13"
 sidebar: "auto"
 categories:
-    - 计算机相关
+    - 工具
 tags:
     - Git
 ---
