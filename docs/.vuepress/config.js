@@ -43,12 +43,12 @@ module.exports = {
                 items: [
                     {
                         text: "数据结构",
-                        link: "/views/internal-forces/data-structure",
+                        link: "/views/internal-forces/data-structure/01-stack",
                     },
-                    {
-                        text: "算法",
-                        link: "/views/internal-forces/algorithm/",
-                    },
+                    // {
+                    //     text: "算法",
+                    //     link: "/views/internal-forces/algorithm/",
+                    // },
                     {
                         text: "设计模式",
                         link: "/views/internal-forces/design-pattern/01-introduction",
@@ -62,7 +62,8 @@ module.exports = {
                 items: [
                     {
                         text: "vue2",
-                        link: "/views/source-code/vue2/01-entry",
+                        // link: "/views/source-code/vue2/01-entry",
+                        link: "http://47.111.91.121/vue-notes/",
                     },
                     {
                         text: "vue3",
@@ -74,9 +75,9 @@ module.exports = {
                     },
                 ],
             },
-            { text: "奇妙的css", link: "/views/front-end/css/", icon: "fa-brands fa-css3" },
+            { text: "奇妙的css", link: "/views/front-end/css/01-css", icon: "fa-brands fa-css3" },
             { text: "时间轴", link: "/timeline/", icon: "reco-date" },
-            { text: "关于", link: "/views/about/", icon: "reco-account" },
+            { text: "关于", link: "/about/", icon: "reco-account" },
         ],
         // 博客配置
         blogConfig: {

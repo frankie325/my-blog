@@ -19,6 +19,7 @@ const vuepressPlugin = function () {
                     // mode: "titlecase",
                     map: {
                         "/views/front-end/webpack/": "🎉 Webpack5笔记 🎉",
+                        "/views/internal-forces/data-structure/": "🎉 数据结构 🎉",
                     },
                 },
                 collapse: {
