@@ -183,7 +183,7 @@ module.exports = {
 `webpack-dev-server`会创建两个服务：提供静态资源的服务（`express`）和 `Socket`服务（`net.Socket`）:
 
 -   `express` 服务负责直接提供静态资源的服务（打包后的资源直接被浏览器请求和解析）。
--   `socket` 服务建立长连接，当服务器监听到对应的模块发生变化时，会生成两个文件`.json`（manifest 文件）和`.js`文件（update chunk），通过长连接可以直接将这两个文件发送给浏览器，流浪器拿到两个新的文件后，通过`HRM runtime`机制，加载这两文件，并对修改的模块进行更新。
+-   `socket` 服务建立长连接，当服务器监听到对应的模块发生变化时，会生成两个文件`.json`（manifest 文件）和`.js`文件（update chunk），通过长连接可以直接将这两个文件发送给浏览器，浏览器拿到两个新的文件后，通过`HRM runtime`机制，加载这两文件，并对修改的模块进行更新。
 
 ![](./assets/images/HMR.png)
 

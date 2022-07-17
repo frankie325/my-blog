@@ -63,7 +63,7 @@ module.exports = {
                     {
                         text: "vue2",
                         // link: "/views/source-code/vue2/01-entry",
-                        link: "http://47.111.91.121/vue-notes/",
+                        link: "http://www.ffrank.cn/vue-notes/",
                     },
                     {
                         text: "vue3",
@@ -75,7 +75,7 @@ module.exports = {
                     },
                 ],
             },
-            { text: "奇妙的css", link: "/views/front-end/css/01-css", icon: "fa-brands fa-css3" },
+            { text: "奇妙的Css", link: "/views/front-end/css/01-negative-margin", icon: "fa-brands fa-css3" },
             { text: "时间轴", link: "/timeline/", icon: "reco-date" },
             { text: "关于", link: "/about/", icon: "reco-account" },
         ],

@@ -2,7 +2,6 @@
 title: 观察者Observer
 date: "2022-5-27"
 sidebar: "auto"
-sticky: 2
 categories:
     - 前端
 tags:

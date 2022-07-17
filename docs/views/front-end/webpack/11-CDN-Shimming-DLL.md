@@ -49,7 +49,7 @@ module.exports = {
 </html>
 ```
 
-因为再开环境下我们是不需要使用CDN的，本地服务下的资源要更快，所以我们可以将 `externals` 配置放到 `webpack.prod.js` 中，那在模板中引入CDN时如何区分开发环境还是生产环境呢？
+因为再开发环境下我们是不需要使用CDN的，本地服务下的资源要更快，所以我们可以将 `externals` 配置放到 `webpack.prod.js` 中，那在模板中引入CDN时如何区分开发环境还是生产环境呢？
 
 因为html模板是通过ejs引擎进行解析的，所以我们可以是用ejs引擎的语法
 ```html

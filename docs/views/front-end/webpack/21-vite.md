@@ -21,7 +21,7 @@ tags:
 
 ## 浏览器的原生支持
 
-大部分的浏览器都已经支持 ESModule，我们可以使用 ESModule 模块化代码直接泡在浏览器里
+大部分的浏览器都已经支持 ESModule，我们可以使用 ESModule 模块化代码直接跑在浏览器里
 
 新建 `math.js`，使用 ESModule 语法导出
 

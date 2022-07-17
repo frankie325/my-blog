@@ -2,6 +2,7 @@
 title: 浏览器中各元素的距离属性
 date: "2022-5-13"
 sidebar: "auto"
+sticky: 2
 categories:
     - 前端
 tags:

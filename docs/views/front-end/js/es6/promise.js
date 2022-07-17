@@ -20,8 +20,9 @@ class MyPromise {
             }
         };
         let reject = (reason) => {
-            if (value instanceof MyPromise) {
-                return value.then(resolve, reject);
+            if (reason instanceof MyPromise) {
+                // reject内传递的Promise即使是调用了resolve，这里也会转为reject操作
+                return reason.then(reject, reject);
             }
 
             if (this.state === "pending") {
