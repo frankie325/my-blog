@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "npm run docs:dev",
+    "serve": "npm run dev",
     "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh"
